@@ -1,0 +1,400 @@
+2018-12-03T20:06:17.6209664+02:00 0HLIP982NNSSH:00000001 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:60578/api/login   (ca22a1cb)
+2018-12-03T20:06:17.7928240+02:00 0HLIP982NNSSH:00000001 [INF] Policy execution successful. (0204925d)
+2018-12-03T20:06:17.9148463+02:00 0HLIP982NNSSH:00000001 [INF] Request finished in 309.274ms 204  (791a596a)
+2018-12-03T20:06:18.2589718+02:00 0HLIP982NNSSH:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:60578/api/login application/json 37 (ca22a1cb)
+2018-12-03T20:06:18.2593468+02:00 0HLIP982NNSSH:00000002 [INF] Policy execution successful. (0204925d)
+2018-12-03T20:06:21.3084622+02:00 0HLIP982NNSSH:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "WebRJP.Controllers.AccountController.Login (WebRJP)" (a44c0341)
+2018-12-03T20:06:23.0785795+02:00 0HLIP982NNSSH:00000002 [INF] Executing action method "WebRJP.Controllers.AccountController.Login (WebRJP)" with arguments (["WebRJP.Common.LoginModel"]) - Validation state: Valid (4e3479ed)
+2018-12-03T20:06:24.3337813+02:00 0HLIP982NNSSH:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T20:06:26.9756164+02:00 0HLIP982NNSSH:00000002 [INF] Executed DbCommand ("210"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-12-03T20:06:27.4199623+02:00 0HLIP982NNSSH:00000002 [WRN] Invalid password for user "0e00c925-e46f-4b41-b005-c59d94760c05". (c2dce6c7)
+2018-12-03T20:06:27.4203954+02:00 0HLIP982NNSSH:00000002 [WRN] User "0e00c925-e46f-4b41-b005-c59d94760c05" failed to provide the correct password. (ec8d2479)
+2018-12-03T20:06:27.4205959+02:00 0HLIP982NNSSH:00000002 [ERR] password not correct (06e40030)
+2018-12-03T20:06:27.4529041+02:00 0HLIP982NNSSH:00000002 [INF] Executed action method "WebRJP.Controllers.AccountController.Login (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.UnauthorizedResult" in 4352.2233ms. (50a9e262)
+2018-12-03T20:06:27.4998667+02:00 0HLIP982NNSSH:00000002 [INF] Executing HttpStatusCodeResult, setting HTTP status code 401 (e28ccfae)
+2018-12-03T20:06:27.5702086+02:00 0HLIP982NNSSH:00000002 [INF] Executed action "WebRJP.Controllers.AccountController.Login (WebRJP)" in 6250.9976ms (afa2e885)
+2018-12-03T20:06:27.5974294+02:00 0HLIP982NNSSH:00000002 [INF] Request finished in 9338.477ms 401  (791a596a)
+2018-12-03T20:07:54.0767011+02:00 0HLIP98VAQ00I:00000001 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:60578/api/login   (ca22a1cb)
+2018-12-03T20:07:54.2807908+02:00 0HLIP98VAQ00I:00000001 [INF] Policy execution successful. (0204925d)
+2018-12-03T20:07:54.4190158+02:00 0HLIP98VAQ00I:00000001 [INF] Request finished in 498.5391ms 204  (791a596a)
+2018-12-03T20:07:54.8117291+02:00 0HLIP98VAQ00I:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:60578/api/login application/json 44 (ca22a1cb)
+2018-12-03T20:07:54.8121300+02:00 0HLIP98VAQ00I:00000002 [INF] Policy execution successful. (0204925d)
+2018-12-03T20:07:55.7479895+02:00 0HLIP98VAQ00I:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "WebRJP.Controllers.AccountController.Login (WebRJP)" (a44c0341)
+2018-12-03T20:07:56.4974074+02:00 0HLIP98VAQ00I:00000002 [INF] Executing action method "WebRJP.Controllers.AccountController.Login (WebRJP)" with arguments (["WebRJP.Common.LoginModel"]) - Validation state: Valid (4e3479ed)
+2018-12-03T20:07:57.4019297+02:00 0HLIP98VAQ00I:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T20:07:58.3755295+02:00 0HLIP98VAQ00I:00000002 [INF] Executed DbCommand ("112"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-12-03T20:07:58.5002051+02:00 0HLIP98VAQ00I:00000002 [ERR] user not exist (14c53905)
+2018-12-03T20:07:58.5158192+02:00 0HLIP98VAQ00I:00000002 [INF] Executed action method "WebRJP.Controllers.AccountController.Login (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 2010.943ms. (50a9e262)
+2018-12-03T20:07:58.5757726+02:00 0HLIP98VAQ00I:00000002 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2018-12-03T20:07:58.6392534+02:00 0HLIP98VAQ00I:00000002 [INF] Executed action "WebRJP.Controllers.AccountController.Login (WebRJP)" in 2881.4039ms (afa2e885)
+2018-12-03T20:07:58.7013549+02:00 0HLIP98VAQ00I:00000002 [INF] Request finished in 3890.2702ms 400 text/plain; charset=utf-8 (791a596a)
+2018-12-03T22:15:26.2649257+02:00 0HLIPBG7VMMAO:00000001 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:60578/api/login   (ca22a1cb)
+2018-12-03T22:15:26.4146533+02:00 0HLIPBG7VMMAO:00000001 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:15:26.5860631+02:00 0HLIPBG7VMMAO:00000001 [INF] Request finished in 337.921ms 204  (791a596a)
+2018-12-03T22:15:26.6711719+02:00 0HLIPBG7VMMAO:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:60578/api/login application/json 46 (ca22a1cb)
+2018-12-03T22:15:26.6718524+02:00 0HLIPBG7VMMAO:00000002 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:15:28.1055618+02:00 0HLIPBG7VMMAO:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "WebRJP.Controllers.AccountController.Login (WebRJP)" (a44c0341)
+2018-12-03T22:15:29.5779227+02:00 0HLIPBG7VMMAO:00000002 [INF] Executing action method "WebRJP.Controllers.AccountController.Login (WebRJP)" with arguments (["WebRJP.Common.LoginModel"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:15:30.5781187+02:00 0HLIPBG7VMMAO:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:15:31.3638111+02:00 0HLIPBG7VMMAO:00000002 [INF] Executed DbCommand ("82"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-12-03T22:15:31.7430785+02:00 0HLIPBG7VMMAO:00000002 [INF] Executed DbCommand ("25"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-12-03T22:15:31.8381267+02:00 0HLIPBG7VMMAO:00000002 [INF] Executed DbCommand ("15"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-03T22:15:31.8908539+02:00 0HLIPBG7VMMAO:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-12-03T22:15:32.1833469+02:00 0HLIPBG7VMMAO:00000002 [INF] Executed action method "WebRJP.Controllers.AccountController.Login (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2589.0258ms. (50a9e262)
+2018-12-03T22:15:32.2126699+02:00 0HLIPBG7VMMAO:00000002 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2018-12-03T22:15:32.2594063+02:00 0HLIPBG7VMMAO:00000002 [INF] Executed action "WebRJP.Controllers.AccountController.Login (WebRJP)" in 4143.2052ms (afa2e885)
+2018-12-03T22:15:32.2872793+02:00 0HLIPBG7VMMAO:00000002 [INF] Request finished in 5616.1406ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:15:43.2163326+02:00 0HLIPBG7VMMAO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/346910   (ca22a1cb)
+2018-12-03T22:15:43.2166528+02:00 0HLIPBG7VMMAO:00000003 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:15:43.2337288+02:00 0HLIPBG7VMMAO:00000003 [INF] Route matched with "{action = \"GetMovieDetails\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" (a44c0341)
+2018-12-03T22:15:43.2384911+02:00 0HLIPBG7VMMAO:00000003 [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" with arguments (["346910"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:15:43.2524019+02:00 0HLIPBG7VMMAO:00000003 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:15:43.3690307+02:00 0HLIPBG7VMMAO:00000003 [INF] Executed DbCommand ("46"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [movie].[Id], [movie].[Adult], [movie].[Backdrop_path], [movie].[Budget], [movie].[Original_language], [movie].[Original_title], [movie].[Overview], [movie].[Popularity], [movie].[Poster_path], [movie].[Release_date], [movie].[Revenue], [movie].[Runtime], [movie].[Title], [movie].[Video], [movie].[Vote_average], [movie].[Vote_count]
+FROM [Movies] AS [movie]
+WHERE [movie].[Id] = @__movieId_0" (0723d8ff)
+2018-12-03T22:15:43.3845970+02:00 0HLIPBG7VMMAO:00000003 [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 145.8688ms. (50a9e262)
+2018-12-03T22:15:43.3850228+02:00 0HLIPBG7VMMAO:00000003 [INF] Executing ObjectResult, writing value of type '"null"'. (8a1b66c8)
+2018-12-03T22:15:43.3852966+02:00 0HLIPBG7VMMAO:00000003 [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" in 151.4162ms (afa2e885)
+2018-12-03T22:15:43.3856237+02:00 0HLIPBG7VMMAO:00000003 [INF] Request finished in 170.1221ms 204  (791a596a)
+2018-12-03T22:15:49.0608681+02:00 0HLIPBG7VMMAO:00000004 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:60578/api/Movie/CreateNewMovie   (ca22a1cb)
+2018-12-03T22:15:49.0612988+02:00 0HLIPBG7VMMAO:00000004 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:15:49.0615178+02:00 0HLIPBG7VMMAO:00000004 [INF] Request finished in 1.8401ms 204  (791a596a)
+2018-12-03T22:15:49.1504286+02:00 0HLIPBG7VMMAO:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:60578/api/Movie/CreateNewMovie application/json 68112 (ca22a1cb)
+2018-12-03T22:15:49.1505797+02:00 0HLIPBG7VMMAO:00000005 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:15:49.1785001+02:00 0HLIPBG7VMMAO:00000005 [INF] Route matched with "{action = \"AddFullMovieDetails\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.AddFullMovieDetails (WebRJP)" (a44c0341)
+2018-12-03T22:15:49.2155657+02:00 0HLIPBG7VMMAO:00000005 [INF] Authorization failed. (b15dd539)
+2018-12-03T22:15:49.2195404+02:00 0HLIPBG7VMMAO:00000005 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-12-03T22:15:49.2306304+02:00 0HLIPBG7VMMAO:00000005 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-12-03T22:15:49.2408286+02:00 0HLIPBG7VMMAO:00000005 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-12-03T22:15:49.2409747+02:00 0HLIPBG7VMMAO:00000005 [INF] Executed action "WebRJP.Controllers.MovieController.AddFullMovieDetails (WebRJP)" in 62.389ms (afa2e885)
+2018-12-03T22:15:49.2411395+02:00 0HLIPBG7VMMAO:00000005 [INF] Request finished in 90.815ms 302  (791a596a)
+2018-12-03T22:15:49.2623778+02:00  [INF] Connection id ""0HLIPBG7VMMAO"", Request id ""0HLIPBG7VMMAO:00000005"": the application completed without reading the entire request body. (54ac9468)
+2018-12-03T22:15:49.3651115+02:00 0HLIPBG7VMMAO:00000006 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:60578/Account/Login?ReturnUrl=%2Fapi%2FMovie%2FCreateNewMovie   (ca22a1cb)
+2018-12-03T22:15:49.3655935+02:00 0HLIPBG7VMMAO:00000006 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:15:49.3658194+02:00 0HLIPBG7VMMAO:00000006 [INF] Request finished in 0.7895ms 204  (791a596a)
+2018-12-03T22:15:49.3859562+02:00 0HLIPBG7VMMAO:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:60578/Account/Login?ReturnUrl=%2Fapi%2FMovie%2FCreateNewMovie application/json  (ca22a1cb)
+2018-12-03T22:15:49.3861112+02:00 0HLIPBG7VMMAO:00000007 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:15:49.3867629+02:00 0HLIPBG7VMMAO:00000007 [INF] Request finished in 0.8716ms 404  (791a596a)
+2018-12-03T22:26:47.8849397+02:00 0HLIPBMJ5B4SO:00000001 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:60578/api/login   (ca22a1cb)
+2018-12-03T22:26:47.9409039+02:00 0HLIPBMJ5B4SO:00000001 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:26:47.9585841+02:00 0HLIPBMJ5B4SO:00000001 [INF] Request finished in 88.2341ms 204  (791a596a)
+2018-12-03T22:26:48.0014073+02:00 0HLIPBMJ5B4SO:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:60578/api/login application/json 46 (ca22a1cb)
+2018-12-03T22:26:48.0019862+02:00 0HLIPBMJ5B4SO:00000002 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:26:48.3098649+02:00 0HLIPBMJ5B4SO:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "WebRJP.Controllers.AccountController.Login (WebRJP)" (a44c0341)
+2018-12-03T22:26:48.6996708+02:00 0HLIPBMJ5B4SO:00000002 [INF] Executing action method "WebRJP.Controllers.AccountController.Login (WebRJP)" with arguments (["WebRJP.Common.LoginModel"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:26:49.2588234+02:00 0HLIPBMJ5B4SO:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:26:49.7451847+02:00 0HLIPBMJ5B4SO:00000002 [INF] Executed DbCommand ("32"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-12-03T22:26:50.0308244+02:00 0HLIPBMJ5B4SO:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-12-03T22:26:50.1539951+02:00 0HLIPBMJ5B4SO:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-03T22:26:50.1892783+02:00 0HLIPBMJ5B4SO:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-12-03T22:26:50.2347518+02:00 0HLIPBMJ5B4SO:00000002 [INF] Executed action method "WebRJP.Controllers.AccountController.Login (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1527.8239ms. (50a9e262)
+2018-12-03T22:26:50.2625045+02:00 0HLIPBMJ5B4SO:00000002 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2018-12-03T22:26:50.3033443+02:00 0HLIPBMJ5B4SO:00000002 [INF] Executed action "WebRJP.Controllers.AccountController.Login (WebRJP)" in 1984.849ms (afa2e885)
+2018-12-03T22:26:50.3912480+02:00 0HLIPBMJ5B4SO:00000002 [INF] Request finished in 2389.6559ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:27:05.6476335+02:00 0HLIPBMJ5B4SO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/424694   (ca22a1cb)
+2018-12-03T22:27:05.6479146+02:00 0HLIPBMJ5B4SO:00000003 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:27:05.6658544+02:00 0HLIPBMJ5B4SO:00000003 [INF] Route matched with "{action = \"GetMovieDetails\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" (a44c0341)
+2018-12-03T22:27:05.6736756+02:00 0HLIPBMJ5B4SO:00000003 [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" with arguments (["424694"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:27:05.6863016+02:00 0HLIPBMJ5B4SO:00000003 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:27:05.7511846+02:00 0HLIPBMJ5B4SO:00000003 [INF] Executed DbCommand ("21"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [movie].[Id], [movie].[Adult], [movie].[Backdrop_path], [movie].[Budget], [movie].[Original_language], [movie].[Original_title], [movie].[Overview], [movie].[Popularity], [movie].[Poster_path], [movie].[Release_date], [movie].[Revenue], [movie].[Runtime], [movie].[Title], [movie].[Video], [movie].[Vote_average], [movie].[Vote_count]
+FROM [Movies] AS [movie]
+WHERE [movie].[Id] = @__movieId_0" (0723d8ff)
+2018-12-03T22:27:05.8649505+02:00 0HLIPBMJ5B4SO:00000003 [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 190.9815ms. (50a9e262)
+2018-12-03T22:27:05.8657543+02:00 0HLIPBMJ5B4SO:00000003 [INF] Executing ObjectResult, writing value of type '"WebRJP.Models.Movies"'. (8a1b66c8)
+2018-12-03T22:27:05.9128406+02:00 0HLIPBMJ5B4SO:00000003 [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" in 246.7798ms (afa2e885)
+2018-12-03T22:27:05.9132038+02:00 0HLIPBMJ5B4SO:00000003 [INF] Request finished in 266.0704ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:27:05.9944268+02:00 0HLIPBMJ5B4SO:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/424694/Credit   (ca22a1cb)
+2018-12-03T22:27:05.9945750+02:00 0HLIPBMJ5B4SO:00000004 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:27:06.0076895+02:00 0HLIPBMJ5B4SO:00000004 [INF] Route matched with "{action = \"GetMovieCredit\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)" (a44c0341)
+2018-12-03T22:27:06.0084252+02:00 0HLIPBMJ5B4SO:00000004 [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)" with arguments (["424694"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:27:06.0192669+02:00 0HLIPBMJ5B4SO:00000004 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:27:06.0426308+02:00 0HLIPBMJ5B4SO:00000004 [WRN] The Include operation for navigation '"[c].Casts"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2018-12-03T22:27:06.0471721+02:00 0HLIPBMJ5B4SO:00000004 [WRN] The Include operation for navigation '"[c].Crews"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2018-12-03T22:27:06.1477253+02:00 0HLIPBMJ5B4SO:00000004 [INF] Executed DbCommand ("50"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c.Casts].[Credit_id], [c.Casts].[Cast_id], [c.Casts].[Character], [c.Casts].[Gender], [c.Casts].[Id], [c.Casts].[Name], [c.Casts].[Order], [c.Casts].[Profile_path]
+FROM [Credits] AS [c]
+LEFT JOIN [Casts] AS [c.Casts] ON [c].[Credit_Id] = [c.Casts].[Credit_id]
+WHERE ([c].[Movie_Id] = @__movieId_0) AND ([c].[IsCast] = 1)" (0723d8ff)
+2018-12-03T22:27:06.1801303+02:00 0HLIPBMJ5B4SO:00000004 [WRN] The Include operation for navigation '"[c].Casts"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2018-12-03T22:27:06.1802907+02:00 0HLIPBMJ5B4SO:00000004 [WRN] The Include operation for navigation '"[c].Crews"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2018-12-03T22:27:06.2184587+02:00 0HLIPBMJ5B4SO:00000004 [INF] Executed DbCommand ("13"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c.Crews].[Credit_id], [c.Crews].[Department], [c.Crews].[Gender], [c.Crews].[Id], [c.Crews].[Job], [c.Crews].[Name], [c.Crews].[Profile_path]
+FROM [Credits] AS [c]
+LEFT JOIN [Crews] AS [c.Crews] ON [c].[Credit_Id] = [c.Crews].[Credit_id]
+WHERE ([c].[Movie_Id] = @__movieId_0) AND ([c].[IsCast] = 0)" (0723d8ff)
+2018-12-03T22:27:06.2358871+02:00 0HLIPBMJ5B4SO:00000004 [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 227.323ms. (50a9e262)
+2018-12-03T22:27:06.2361071+02:00 0HLIPBMJ5B4SO:00000004 [INF] Executing ObjectResult, writing value of type '"WebRJP.Common.TMDBCredit"'. (8a1b66c8)
+2018-12-03T22:27:06.2574726+02:00 0HLIPBMJ5B4SO:00000004 [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)" in 249.5284ms (afa2e885)
+2018-12-03T22:27:06.2576364+02:00 0HLIPBMJ5B4SO:00000004 [INF] Request finished in 263.3053ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:27:06.3879757+02:00 0HLIPBMJ5B4SO:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/424694/Genres   (ca22a1cb)
+2018-12-03T22:27:06.3883242+02:00 0HLIPBMJ5B4SO:00000005 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:27:06.4013135+02:00 0HLIPBMJ5B4SO:00000005 [INF] Route matched with "{action = \"GetMovieGenres\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)" (a44c0341)
+2018-12-03T22:27:06.4023597+02:00 0HLIPBMJ5B4SO:00000005 [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)" with arguments (["424694"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:27:06.4098021+02:00 0HLIPBMJ5B4SO:00000005 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:27:06.4320235+02:00 0HLIPBMJ5B4SO:00000005 [INF] Executed DbCommand ("8"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [m].[Id], [m].[Adult], [m].[Backdrop_path], [m].[Budget], [m].[Original_language], [m].[Original_title], [m].[Overview], [m].[Popularity], [m].[Poster_path], [m].[Release_date], [m].[Revenue], [m].[Runtime], [m].[Title], [m].[Video], [m].[Vote_average], [m].[Vote_count]
+FROM [Movies] AS [m]
+WHERE [m].[Id] = @__movieId_0" (0723d8ff)
+2018-12-03T22:27:06.5571673+02:00 0HLIPBMJ5B4SO:00000005 [INF] Executed DbCommand ("13"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e.Genre].[Id], [e.Genre].[IsMovie], [e.Genre].[Name]
+FROM [MovieGenres] AS [e]
+INNER JOIN [Genres] AS [e.Genre] ON [e].[Genre_id] = [e.Genre].[Id]
+WHERE [e].[Movie_id] = @__get_Item_0" (0723d8ff)
+2018-12-03T22:27:06.5879737+02:00 0HLIPBMJ5B4SO:00000005 [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 185.3084ms. (50a9e262)
+2018-12-03T22:27:06.5882401+02:00 0HLIPBMJ5B4SO:00000005 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebRJP.Models.Genres, WebRJP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-12-03T22:27:06.5967683+02:00 0HLIPBMJ5B4SO:00000005 [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)" in 194.9298ms (afa2e885)
+2018-12-03T22:27:06.5970534+02:00 0HLIPBMJ5B4SO:00000005 [INF] Request finished in 209.085ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:27:06.6506762+02:00 0HLIPBMJ5B4SO:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/424694/KeyWords   (ca22a1cb)
+2018-12-03T22:27:06.6509817+02:00 0HLIPBMJ5B4SO:00000006 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:27:06.6653825+02:00 0HLIPBMJ5B4SO:00000006 [INF] Route matched with "{action = \"GetMovieKeyWords\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)" (a44c0341)
+2018-12-03T22:27:06.6660224+02:00 0HLIPBMJ5B4SO:00000006 [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)" with arguments (["424694"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:27:06.6728101+02:00 0HLIPBMJ5B4SO:00000006 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:27:06.6794541+02:00 0HLIPBMJ5B4SO:00000006 [INF] Executed DbCommand ("5"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [m].[Id], [m].[Adult], [m].[Backdrop_path], [m].[Budget], [m].[Original_language], [m].[Original_title], [m].[Overview], [m].[Popularity], [m].[Poster_path], [m].[Release_date], [m].[Revenue], [m].[Runtime], [m].[Title], [m].[Video], [m].[Vote_average], [m].[Vote_count]
+FROM [Movies] AS [m]
+WHERE [m].[Id] = @__movieId_0" (0723d8ff)
+2018-12-03T22:27:06.7318972+02:00 0HLIPBMJ5B4SO:00000006 [INF] Executed DbCommand ("27"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e.KeyWord].[Id], [e.KeyWord].[Name]
+FROM [MovieKeyWords] AS [e]
+INNER JOIN [KeyWords] AS [e.KeyWord] ON [e].[KeyWord_id] = [e.KeyWord].[Id]
+WHERE [e].[Movie_id] = @__get_Item_0" (0723d8ff)
+2018-12-03T22:27:06.7507370+02:00 0HLIPBMJ5B4SO:00000006 [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 84.5782ms. (50a9e262)
+2018-12-03T22:27:06.7513882+02:00 0HLIPBMJ5B4SO:00000006 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebRJP.Models.KeyWords, WebRJP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-12-03T22:27:06.7567534+02:00 0HLIPBMJ5B4SO:00000006 [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)" in 91.166ms (afa2e885)
+2018-12-03T22:27:06.7627231+02:00 0HLIPBMJ5B4SO:00000006 [INF] Request finished in 112.1217ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:27:57.0387483+02:00 0HLIPBMJ5B4SO:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/338952   (ca22a1cb)
+2018-12-03T22:27:57.0388891+02:00 0HLIPBMJ5B4SO:00000007 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:27:57.0393682+02:00 0HLIPBMJ5B4SO:00000007 [INF] Route matched with "{action = \"GetMovieDetails\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" (a44c0341)
+2018-12-03T22:27:57.0397964+02:00 0HLIPBMJ5B4SO:00000007 [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" with arguments (["338952"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:27:57.0405151+02:00 0HLIPBMJ5B4SO:00000007 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:27:57.0662404+02:00 0HLIPBMJ5B4SO:00000007 [INF] Executed DbCommand ("25"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [movie].[Id], [movie].[Adult], [movie].[Backdrop_path], [movie].[Budget], [movie].[Original_language], [movie].[Original_title], [movie].[Overview], [movie].[Popularity], [movie].[Poster_path], [movie].[Release_date], [movie].[Revenue], [movie].[Runtime], [movie].[Title], [movie].[Video], [movie].[Vote_average], [movie].[Vote_count]
+FROM [Movies] AS [movie]
+WHERE [movie].[Id] = @__movieId_0" (0723d8ff)
+2018-12-03T22:27:57.0667577+02:00 0HLIPBMJ5B4SO:00000007 [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 26.8737ms. (50a9e262)
+2018-12-03T22:27:57.0670256+02:00 0HLIPBMJ5B4SO:00000007 [INF] Executing ObjectResult, writing value of type '"WebRJP.Models.Movies"'. (8a1b66c8)
+2018-12-03T22:27:57.0675507+02:00 0HLIPBMJ5B4SO:00000007 [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" in 28.1042ms (afa2e885)
+2018-12-03T22:27:57.0677320+02:00 0HLIPBMJ5B4SO:00000007 [INF] Request finished in 29.2424ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:27:57.1746135+02:00 0HLIPBMJ5B4SO:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/338952/Credit   (ca22a1cb)
+2018-12-03T22:27:57.1747993+02:00 0HLIPBMJ5B4SO:00000008 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:27:57.1750813+02:00 0HLIPBMJ5B4SO:00000008 [INF] Route matched with "{action = \"GetMovieCredit\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)" (a44c0341)
+2018-12-03T22:27:57.1755453+02:00 0HLIPBMJ5B4SO:00000008 [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)" with arguments (["338952"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:27:57.1762053+02:00 0HLIPBMJ5B4SO:00000008 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:27:57.3643268+02:00 0HLIPBMJ5B4SO:00000008 [INF] Executed DbCommand ("187"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c.Casts].[Credit_id], [c.Casts].[Cast_id], [c.Casts].[Character], [c.Casts].[Gender], [c.Casts].[Id], [c.Casts].[Name], [c.Casts].[Order], [c.Casts].[Profile_path]
+FROM [Credits] AS [c]
+LEFT JOIN [Casts] AS [c.Casts] ON [c].[Credit_Id] = [c.Casts].[Credit_id]
+WHERE ([c].[Movie_Id] = @__movieId_0) AND ([c].[IsCast] = 1)" (0723d8ff)
+2018-12-03T22:27:57.4646043+02:00 0HLIPBMJ5B4SO:00000008 [INF] Executed DbCommand ("88"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c.Crews].[Credit_id], [c.Crews].[Department], [c.Crews].[Gender], [c.Crews].[Id], [c.Crews].[Job], [c.Crews].[Name], [c.Crews].[Profile_path]
+FROM [Credits] AS [c]
+LEFT JOIN [Crews] AS [c.Crews] ON [c].[Credit_Id] = [c.Crews].[Credit_id]
+WHERE ([c].[Movie_Id] = @__movieId_0) AND ([c].[IsCast] = 0)" (0723d8ff)
+2018-12-03T22:27:57.4659013+02:00 0HLIPBMJ5B4SO:00000008 [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 290.1707ms. (50a9e262)
+2018-12-03T22:27:57.4660968+02:00 0HLIPBMJ5B4SO:00000008 [INF] Executing ObjectResult, writing value of type '"WebRJP.Common.TMDBCredit"'. (8a1b66c8)
+2018-12-03T22:27:57.4673778+02:00 0HLIPBMJ5B4SO:00000008 [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)" in 292.0818ms (afa2e885)
+2018-12-03T22:27:57.4676433+02:00 0HLIPBMJ5B4SO:00000008 [INF] Request finished in 293.0517ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:27:57.6584111+02:00 0HLIPBMJ5B4SO:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/338952/Genres   (ca22a1cb)
+2018-12-03T22:27:57.6592383+02:00 0HLIPBMJ5B4SO:00000009 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:27:57.6595903+02:00 0HLIPBMJ5B4SO:00000009 [INF] Route matched with "{action = \"GetMovieGenres\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)" (a44c0341)
+2018-12-03T22:27:57.6600195+02:00 0HLIPBMJ5B4SO:00000009 [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)" with arguments (["338952"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:27:57.6631181+02:00 0HLIPBMJ5B4SO:00000009 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:27:57.6803710+02:00 0HLIPBMJ5B4SO:00000009 [INF] Executed DbCommand ("16"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [m].[Id], [m].[Adult], [m].[Backdrop_path], [m].[Budget], [m].[Original_language], [m].[Original_title], [m].[Overview], [m].[Popularity], [m].[Poster_path], [m].[Release_date], [m].[Revenue], [m].[Runtime], [m].[Title], [m].[Video], [m].[Vote_average], [m].[Vote_count]
+FROM [Movies] AS [m]
+WHERE [m].[Id] = @__movieId_0" (0723d8ff)
+2018-12-03T22:27:57.6989713+02:00 0HLIPBMJ5B4SO:00000009 [INF] Executed DbCommand ("16"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e.Genre].[Id], [e.Genre].[IsMovie], [e.Genre].[Name]
+FROM [MovieGenres] AS [e]
+INNER JOIN [Genres] AS [e.Genre] ON [e].[Genre_id] = [e.Genre].[Id]
+WHERE [e].[Movie_id] = @__get_Item_0" (0723d8ff)
+2018-12-03T22:27:57.6995252+02:00 0HLIPBMJ5B4SO:00000009 [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 39.3741ms. (50a9e262)
+2018-12-03T22:27:57.6997090+02:00 0HLIPBMJ5B4SO:00000009 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebRJP.Models.Genres, WebRJP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-12-03T22:27:57.6998948+02:00 0HLIPBMJ5B4SO:00000009 [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)" in 40.2482ms (afa2e885)
+2018-12-03T22:27:57.7000894+02:00 0HLIPBMJ5B4SO:00000009 [INF] Request finished in 41.8713ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:27:57.7742436+02:00 0HLIPBMJ5B4SO:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/338952/KeyWords   (ca22a1cb)
+2018-12-03T22:27:57.7744196+02:00 0HLIPBMJ5B4SO:0000000A [INF] Policy execution successful. (0204925d)
+2018-12-03T22:27:57.7746566+02:00 0HLIPBMJ5B4SO:0000000A [INF] Route matched with "{action = \"GetMovieKeyWords\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)" (a44c0341)
+2018-12-03T22:27:57.7751309+02:00 0HLIPBMJ5B4SO:0000000A [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)" with arguments (["338952"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:27:57.7756530+02:00 0HLIPBMJ5B4SO:0000000A [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:27:57.7824706+02:00 0HLIPBMJ5B4SO:0000000A [INF] Executed DbCommand ("6"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [m].[Id], [m].[Adult], [m].[Backdrop_path], [m].[Budget], [m].[Original_language], [m].[Original_title], [m].[Overview], [m].[Popularity], [m].[Poster_path], [m].[Release_date], [m].[Revenue], [m].[Runtime], [m].[Title], [m].[Video], [m].[Vote_average], [m].[Vote_count]
+FROM [Movies] AS [m]
+WHERE [m].[Id] = @__movieId_0" (0723d8ff)
+2018-12-03T22:27:57.7936314+02:00 0HLIPBMJ5B4SO:0000000A [INF] Executed DbCommand ("8"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e.KeyWord].[Id], [e.KeyWord].[Name]
+FROM [MovieKeyWords] AS [e]
+INNER JOIN [KeyWords] AS [e.KeyWord] ON [e].[KeyWord_id] = [e.KeyWord].[Id]
+WHERE [e].[Movie_id] = @__get_Item_0" (0723d8ff)
+2018-12-03T22:27:57.7944078+02:00 0HLIPBMJ5B4SO:0000000A [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 19.1248ms. (50a9e262)
+2018-12-03T22:27:57.7948092+02:00 0HLIPBMJ5B4SO:0000000A [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebRJP.Models.KeyWords, WebRJP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-12-03T22:27:57.7950336+02:00 0HLIPBMJ5B4SO:0000000A [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)" in 20.305ms (afa2e885)
+2018-12-03T22:27:57.7953162+02:00 0HLIPBMJ5B4SO:0000000A [INF] Request finished in 21.0789ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:28:37.5039977+02:00 0HLIPBMJ5B4SO:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/338952   (ca22a1cb)
+2018-12-03T22:28:37.5046460+02:00 0HLIPBMJ5B4SO:0000000B [INF] Policy execution successful. (0204925d)
+2018-12-03T22:28:37.5049251+02:00 0HLIPBMJ5B4SO:0000000B [INF] Route matched with "{action = \"GetMovieDetails\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" (a44c0341)
+2018-12-03T22:28:37.5056360+02:00 0HLIPBMJ5B4SO:0000000B [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" with arguments (["338952"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:28:37.5063650+02:00 0HLIPBMJ5B4SO:0000000B [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:28:37.5668904+02:00 0HLIPBMJ5B4SO:0000000B [INF] Executed DbCommand ("60"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [movie].[Id], [movie].[Adult], [movie].[Backdrop_path], [movie].[Budget], [movie].[Original_language], [movie].[Original_title], [movie].[Overview], [movie].[Popularity], [movie].[Poster_path], [movie].[Release_date], [movie].[Revenue], [movie].[Runtime], [movie].[Title], [movie].[Video], [movie].[Vote_average], [movie].[Vote_count]
+FROM [Movies] AS [movie]
+WHERE [movie].[Id] = @__movieId_0" (0723d8ff)
+2018-12-03T22:28:37.5673656+02:00 0HLIPBMJ5B4SO:0000000B [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 61.4469ms. (50a9e262)
+2018-12-03T22:28:37.5675455+02:00 0HLIPBMJ5B4SO:0000000B [INF] Executing ObjectResult, writing value of type '"WebRJP.Models.Movies"'. (8a1b66c8)
+2018-12-03T22:28:37.5678584+02:00 0HLIPBMJ5B4SO:0000000B [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" in 62.8764ms (afa2e885)
+2018-12-03T22:28:37.5680955+02:00 0HLIPBMJ5B4SO:0000000B [INF] Request finished in 64.3993ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:28:37.7673607+02:00 0HLIPBMJ5B4SO:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/338952/Credit   (ca22a1cb)
+2018-12-03T22:28:37.7676580+02:00 0HLIPBMJ5B4SO:0000000C [INF] Policy execution successful. (0204925d)
+2018-12-03T22:28:37.7680281+02:00 0HLIPBMJ5B4SO:0000000C [INF] Route matched with "{action = \"GetMovieCredit\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)" (a44c0341)
+2018-12-03T22:28:37.7687331+02:00 0HLIPBMJ5B4SO:0000000C [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)" with arguments (["338952"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:28:37.7700467+02:00 0HLIPBMJ5B4SO:0000000C [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:28:37.7830844+02:00 0HLIPBMJ5B4SO:0000000C [INF] Executed DbCommand ("11"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c.Casts].[Credit_id], [c.Casts].[Cast_id], [c.Casts].[Character], [c.Casts].[Gender], [c.Casts].[Id], [c.Casts].[Name], [c.Casts].[Order], [c.Casts].[Profile_path]
+FROM [Credits] AS [c]
+LEFT JOIN [Casts] AS [c.Casts] ON [c].[Credit_Id] = [c.Casts].[Credit_id]
+WHERE ([c].[Movie_Id] = @__movieId_0) AND ([c].[IsCast] = 1)" (0723d8ff)
+2018-12-03T22:28:37.7964907+02:00 0HLIPBMJ5B4SO:0000000C [INF] Executed DbCommand ("9"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c.Crews].[Credit_id], [c.Crews].[Department], [c.Crews].[Gender], [c.Crews].[Id], [c.Crews].[Job], [c.Crews].[Name], [c.Crews].[Profile_path]
+FROM [Credits] AS [c]
+LEFT JOIN [Crews] AS [c.Crews] ON [c].[Credit_Id] = [c.Crews].[Credit_id]
+WHERE ([c].[Movie_Id] = @__movieId_0) AND ([c].[IsCast] = 0)" (0723d8ff)
+2018-12-03T22:28:37.7993767+02:00 0HLIPBMJ5B4SO:0000000C [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 30.3952ms. (50a9e262)
+2018-12-03T22:28:37.7996358+02:00 0HLIPBMJ5B4SO:0000000C [INF] Executing ObjectResult, writing value of type '"WebRJP.Common.TMDBCredit"'. (8a1b66c8)
+2018-12-03T22:28:37.8004889+02:00 0HLIPBMJ5B4SO:0000000C [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)" in 32.3967ms (afa2e885)
+2018-12-03T22:28:37.8007470+02:00 0HLIPBMJ5B4SO:0000000C [INF] Request finished in 33.4385ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:28:37.9631584+02:00 0HLIPBMJ5B4SO:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/338952/Genres   (ca22a1cb)
+2018-12-03T22:28:37.9634502+02:00 0HLIPBMJ5B4SO:0000000D [INF] Policy execution successful. (0204925d)
+2018-12-03T22:28:37.9639244+02:00 0HLIPBMJ5B4SO:0000000D [INF] Route matched with "{action = \"GetMovieGenres\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)" (a44c0341)
+2018-12-03T22:28:37.9643581+02:00 0HLIPBMJ5B4SO:0000000D [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)" with arguments (["338952"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:28:37.9651677+02:00 0HLIPBMJ5B4SO:0000000D [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:28:37.9745817+02:00 0HLIPBMJ5B4SO:0000000D [INF] Executed DbCommand ("8"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [m].[Id], [m].[Adult], [m].[Backdrop_path], [m].[Budget], [m].[Original_language], [m].[Original_title], [m].[Overview], [m].[Popularity], [m].[Poster_path], [m].[Release_date], [m].[Revenue], [m].[Runtime], [m].[Title], [m].[Video], [m].[Vote_average], [m].[Vote_count]
+FROM [Movies] AS [m]
+WHERE [m].[Id] = @__movieId_0" (0723d8ff)
+2018-12-03T22:28:38.0025398+02:00 0HLIPBMJ5B4SO:0000000D [INF] Executed DbCommand ("25"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e.Genre].[Id], [e.Genre].[IsMovie], [e.Genre].[Name]
+FROM [MovieGenres] AS [e]
+INNER JOIN [Genres] AS [e.Genre] ON [e].[Genre_id] = [e.Genre].[Id]
+WHERE [e].[Movie_id] = @__get_Item_0" (0723d8ff)
+2018-12-03T22:28:38.0034042+02:00 0HLIPBMJ5B4SO:0000000D [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 38.9204ms. (50a9e262)
+2018-12-03T22:28:38.0042153+02:00 0HLIPBMJ5B4SO:0000000D [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebRJP.Models.Genres, WebRJP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-12-03T22:28:38.0047951+02:00 0HLIPBMJ5B4SO:0000000D [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)" in 40.7699ms (afa2e885)
+2018-12-03T22:28:38.0050723+02:00 0HLIPBMJ5B4SO:0000000D [INF] Request finished in 42.6848ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:28:38.0997784+02:00 0HLIPBMJ5B4SO:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/338952/KeyWords   (ca22a1cb)
+2018-12-03T22:28:38.0999114+02:00 0HLIPBMJ5B4SO:0000000E [INF] Policy execution successful. (0204925d)
+2018-12-03T22:28:38.1001842+02:00 0HLIPBMJ5B4SO:0000000E [INF] Route matched with "{action = \"GetMovieKeyWords\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)" (a44c0341)
+2018-12-03T22:28:38.1005709+02:00 0HLIPBMJ5B4SO:0000000E [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)" with arguments (["338952"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:28:38.1012260+02:00 0HLIPBMJ5B4SO:0000000E [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:28:38.1071190+02:00 0HLIPBMJ5B4SO:0000000E [INF] Executed DbCommand ("5"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [m].[Id], [m].[Adult], [m].[Backdrop_path], [m].[Budget], [m].[Original_language], [m].[Original_title], [m].[Overview], [m].[Popularity], [m].[Poster_path], [m].[Release_date], [m].[Revenue], [m].[Runtime], [m].[Title], [m].[Video], [m].[Vote_average], [m].[Vote_count]
+FROM [Movies] AS [m]
+WHERE [m].[Id] = @__movieId_0" (0723d8ff)
+2018-12-03T22:28:38.1213580+02:00 0HLIPBMJ5B4SO:0000000E [INF] Executed DbCommand ("11"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e.KeyWord].[Id], [e.KeyWord].[Name]
+FROM [MovieKeyWords] AS [e]
+INNER JOIN [KeyWords] AS [e.KeyWord] ON [e].[KeyWord_id] = [e.KeyWord].[Id]
+WHERE [e].[Movie_id] = @__get_Item_0" (0723d8ff)
+2018-12-03T22:28:38.1220654+02:00 0HLIPBMJ5B4SO:0000000E [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 21.2901ms. (50a9e262)
+2018-12-03T22:28:38.1224531+02:00 0HLIPBMJ5B4SO:0000000E [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebRJP.Models.KeyWords, WebRJP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-12-03T22:28:38.1226696+02:00 0HLIPBMJ5B4SO:0000000E [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)" in 22.4243ms (afa2e885)
+2018-12-03T22:28:38.1228109+02:00 0HLIPBMJ5B4SO:0000000E [INF] Request finished in 23.1464ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:30:54.8698025+02:00 0HLIPBOSOUSBS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/338952   (ca22a1cb)
+2018-12-03T22:30:54.9327294+02:00 0HLIPBOSOUSBS:00000001 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:30:55.2594055+02:00 0HLIPBOSOUSBS:00000001 [INF] Route matched with "{action = \"GetMovieDetails\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" (a44c0341)
+2018-12-03T22:30:55.5053870+02:00 0HLIPBOSOUSBS:00000001 [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" with arguments (["338952"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:30:56.1719304+02:00 0HLIPBOSOUSBS:00000001 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:30:57.0957173+02:00 0HLIPBOSOUSBS:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [movie].[Id], [movie].[Adult], [movie].[Backdrop_path], [movie].[Budget], [movie].[Original_language], [movie].[Original_title], [movie].[Overview], [movie].[Popularity], [movie].[Poster_path], [movie].[Release_date], [movie].[Revenue], [movie].[Runtime], [movie].[Title], [movie].[Video], [movie].[Vote_average], [movie].[Vote_count]
+FROM [Movies] AS [movie]
+WHERE [movie].[Id] = @__movieId_0" (0723d8ff)
+2018-12-03T22:30:57.2495707+02:00 0HLIPBOSOUSBS:00000001 [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1734.3443ms. (50a9e262)
+2018-12-03T22:30:57.2902927+02:00 0HLIPBOSOUSBS:00000001 [INF] Executing ObjectResult, writing value of type '"WebRJP.Models.Movies"'. (8a1b66c8)
+2018-12-03T22:30:57.4630279+02:00 0HLIPBOSOUSBS:00000001 [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieDetails (WebRJP)" in 2186.3905ms (afa2e885)
+2018-12-03T22:30:57.5165680+02:00 0HLIPBOSOUSBS:00000001 [INF] Request finished in 2652.6967ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:30:57.5548696+02:00 0HLIPBOSOUSBS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/338952/Credit   (ca22a1cb)
+2018-12-03T22:30:57.5552372+02:00 0HLIPBOSOUSBS:00000002 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:30:57.5666772+02:00 0HLIPBOSOUSBS:00000002 [INF] Route matched with "{action = \"GetMovieCredit\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)" (a44c0341)
+2018-12-03T22:30:57.5689296+02:00 0HLIPBOSOUSBS:00000002 [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)" with arguments (["338952"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:30:57.5830966+02:00 0HLIPBOSOUSBS:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:30:57.5977564+02:00 0HLIPBOSOUSBS:00000002 [WRN] The Include operation for navigation '"[c].Casts"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2018-12-03T22:30:57.6056456+02:00 0HLIPBOSOUSBS:00000002 [WRN] The Include operation for navigation '"[c].Crews"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2018-12-03T22:30:57.6809550+02:00 0HLIPBOSOUSBS:00000002 [INF] Executed DbCommand ("8"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c.Casts].[Credit_id], [c.Casts].[Cast_id], [c.Casts].[Character], [c.Casts].[Gender], [c.Casts].[Id], [c.Casts].[Name], [c.Casts].[Order], [c.Casts].[Profile_path]
+FROM [Credits] AS [c]
+LEFT JOIN [Casts] AS [c.Casts] ON [c].[Credit_Id] = [c.Casts].[Credit_id]
+WHERE ([c].[Movie_Id] = @__movieId_0) AND ([c].[IsCast] = 1)" (0723d8ff)
+2018-12-03T22:30:57.7175195+02:00 0HLIPBOSOUSBS:00000002 [WRN] The Include operation for navigation '"[c].Casts"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2018-12-03T22:30:57.7177996+02:00 0HLIPBOSOUSBS:00000002 [WRN] The Include operation for navigation '"[c].Crews"' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information. (10efaee6)
+2018-12-03T22:30:57.7477041+02:00 0HLIPBOSOUSBS:00000002 [INF] Executed DbCommand ("5"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c.Crews].[Credit_id], [c.Crews].[Department], [c.Crews].[Gender], [c.Crews].[Id], [c.Crews].[Job], [c.Crews].[Name], [c.Crews].[Profile_path]
+FROM [Credits] AS [c]
+LEFT JOIN [Crews] AS [c.Crews] ON [c].[Credit_Id] = [c.Crews].[Credit_id]
+WHERE ([c].[Movie_Id] = @__movieId_0) AND ([c].[IsCast] = 0)" (0723d8ff)
+2018-12-03T22:30:57.7612252+02:00 0HLIPBOSOUSBS:00000002 [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 190.1856ms. (50a9e262)
+2018-12-03T22:30:57.7617630+02:00 0HLIPBOSOUSBS:00000002 [INF] Executing ObjectResult, writing value of type '"WebRJP.Common.TMDBCredit"'. (8a1b66c8)
+2018-12-03T22:30:57.7841810+02:00 0HLIPBOSOUSBS:00000002 [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieCredit (WebRJP)" in 217.247ms (afa2e885)
+2018-12-03T22:30:57.7849774+02:00 0HLIPBOSOUSBS:00000002 [INF] Request finished in 230.1752ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:30:57.8546314+02:00 0HLIPBOSOUSBS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/338952/Genres   (ca22a1cb)
+2018-12-03T22:30:57.8551877+02:00 0HLIPBOSOUSBS:00000003 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:30:57.8636822+02:00 0HLIPBOSOUSBS:00000003 [INF] Route matched with "{action = \"GetMovieGenres\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)" (a44c0341)
+2018-12-03T22:30:57.8642434+02:00 0HLIPBOSOUSBS:00000003 [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)" with arguments (["338952"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:30:57.8755143+02:00 0HLIPBOSOUSBS:00000003 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:30:57.8931885+02:00 0HLIPBOSOUSBS:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [m].[Id], [m].[Adult], [m].[Backdrop_path], [m].[Budget], [m].[Original_language], [m].[Original_title], [m].[Overview], [m].[Popularity], [m].[Poster_path], [m].[Release_date], [m].[Revenue], [m].[Runtime], [m].[Title], [m].[Video], [m].[Vote_average], [m].[Vote_count]
+FROM [Movies] AS [m]
+WHERE [m].[Id] = @__movieId_0" (0723d8ff)
+2018-12-03T22:30:58.1309372+02:00 0HLIPBOSOUSBS:00000003 [INF] Executed DbCommand ("27"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e.Genre].[Id], [e.Genre].[IsMovie], [e.Genre].[Name]
+FROM [MovieGenres] AS [e]
+INNER JOIN [Genres] AS [e.Genre] ON [e].[Genre_id] = [e.Genre].[Id]
+WHERE [e].[Movie_id] = @__get_Item_0" (0723d8ff)
+2018-12-03T22:30:58.1888584+02:00 0HLIPBOSOUSBS:00000003 [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 324.4389ms. (50a9e262)
+2018-12-03T22:30:58.1895232+02:00 0HLIPBOSOUSBS:00000003 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebRJP.Models.Genres, WebRJP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-12-03T22:30:58.1959179+02:00 0HLIPBOSOUSBS:00000003 [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieGenres (WebRJP)" in 331.9472ms (afa2e885)
+2018-12-03T22:30:58.1966693+02:00 0HLIPBOSOUSBS:00000003 [INF] Request finished in 341.9558ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-03T22:30:58.2496884+02:00 0HLIPBOSOUSBS:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:60578/api/Movie/338952/KeyWords   (ca22a1cb)
+2018-12-03T22:30:58.2498683+02:00 0HLIPBOSOUSBS:00000004 [INF] Policy execution successful. (0204925d)
+2018-12-03T22:30:58.2771141+02:00 0HLIPBOSOUSBS:00000004 [INF] Route matched with "{action = \"GetMovieKeyWords\", controller = \"Movie\"}". Executing action "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)" (a44c0341)
+2018-12-03T22:30:58.2776206+02:00 0HLIPBOSOUSBS:00000004 [INF] Executing action method "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)" with arguments (["338952"]) - Validation state: Valid (4e3479ed)
+2018-12-03T22:30:58.2909619+02:00 0HLIPBOSOUSBS:00000004 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-03T22:30:58.3076373+02:00 0HLIPBOSOUSBS:00000004 [INF] Executed DbCommand ("14"ms) [Parameters=["@__movieId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [m].[Id], [m].[Adult], [m].[Backdrop_path], [m].[Budget], [m].[Original_language], [m].[Original_title], [m].[Overview], [m].[Popularity], [m].[Poster_path], [m].[Release_date], [m].[Revenue], [m].[Runtime], [m].[Title], [m].[Video], [m].[Vote_average], [m].[Vote_count]
+FROM [Movies] AS [m]
+WHERE [m].[Id] = @__movieId_0" (0723d8ff)
+2018-12-03T22:30:58.3568591+02:00 0HLIPBOSOUSBS:00000004 [INF] Executed DbCommand ("13"ms) [Parameters=["@__get_Item_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e.KeyWord].[Id], [e.KeyWord].[Name]
+FROM [MovieKeyWords] AS [e]
+INNER JOIN [KeyWords] AS [e.KeyWord] ON [e].[KeyWord_id] = [e.KeyWord].[Id]
+WHERE [e].[Movie_id] = @__get_Item_0" (0723d8ff)
+2018-12-03T22:30:58.3607390+02:00 0HLIPBOSOUSBS:00000004 [INF] Executed action method "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 82.9551ms. (50a9e262)
+2018-12-03T22:30:58.3612152+02:00 0HLIPBOSOUSBS:00000004 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebRJP.Models.KeyWords, WebRJP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-12-03T22:30:58.3750028+02:00 0HLIPBOSOUSBS:00000004 [INF] Executed action "WebRJP.Controllers.MovieController.GetMovieKeyWords (WebRJP)" in 97.6849ms (afa2e885)
+2018-12-03T22:30:58.3758887+02:00 0HLIPBOSOUSBS:00000004 [INF] Request finished in 126.2423ms 200 application/json; charset=utf-8 (791a596a)

@@ -1,0 +1,78 @@
+2018-12-04T10:24:39.8994763+02:00 0HLIPO7NIUT0O:00000001 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:60578/api/login   (ca22a1cb)
+2018-12-04T10:24:40.0428484+02:00 0HLIPO7NIUT0O:00000001 [INF] Policy execution successful. (0204925d)
+2018-12-04T10:24:40.1381015+02:00 0HLIPO7NIUT0O:00000001 [INF] Request finished in 252.338ms 204  (791a596a)
+2018-12-04T10:24:40.1898592+02:00 0HLIPO7NIUT0O:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:60578/api/login application/json 46 (ca22a1cb)
+2018-12-04T10:24:40.1905754+02:00 0HLIPO7NIUT0O:00000002 [INF] Policy execution successful. (0204925d)
+2018-12-04T10:24:41.7580947+02:00 0HLIPO7NIUT0O:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "WebRJP.Controllers.AccountController.Login (WebRJP)" (a44c0341)
+2018-12-04T10:24:43.2158418+02:00 0HLIPO7NIUT0O:00000002 [INF] Executing action method "WebRJP.Controllers.AccountController.Login (WebRJP)" with arguments (["WebRJP.Common.LoginModel"]) - Validation state: Valid (4e3479ed)
+2018-12-04T10:24:44.1277145+02:00 0HLIPO7NIUT0O:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-04T10:24:45.7596483+02:00 0HLIPO7NIUT0O:00000002 [INF] Executed DbCommand ("115"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-12-04T10:24:46.1583706+02:00 0HLIPO7NIUT0O:00000002 [INF] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-12-04T10:24:46.2627952+02:00 0HLIPO7NIUT0O:00000002 [INF] Executed DbCommand ("14"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-04T10:24:46.3064296+02:00 0HLIPO7NIUT0O:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-12-04T10:24:46.5462374+02:00 0HLIPO7NIUT0O:00000002 [INF] Executed action method "WebRJP.Controllers.AccountController.Login (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3318.8094ms. (50a9e262)
+2018-12-04T10:24:46.5768370+02:00 0HLIPO7NIUT0O:00000002 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2018-12-04T10:24:46.6201862+02:00 0HLIPO7NIUT0O:00000002 [INF] Executed action "WebRJP.Controllers.AccountController.Login (WebRJP)" in 4850.9932ms (afa2e885)
+2018-12-04T10:24:46.6427827+02:00 0HLIPO7NIUT0O:00000002 [INF] Request finished in 6453.8005ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-04T10:32:39.6750244+02:00 0HLIPO7NIUT0P:00000001 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:60578/api/login   (ca22a1cb)
+2018-12-04T10:32:39.7452557+02:00 0HLIPO7NIUT0P:00000001 [INF] Policy execution successful. (0204925d)
+2018-12-04T10:32:39.7641826+02:00 0HLIPO7NIUT0P:00000001 [INF] Request finished in 137.8603ms 204  (791a596a)
+2018-12-04T10:32:40.0183818+02:00 0HLIPO7NIUT0P:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:60578/api/login application/json 46 (ca22a1cb)
+2018-12-04T10:32:40.0274561+02:00 0HLIPO7NIUT0P:00000002 [INF] Policy execution successful. (0204925d)
+2018-12-04T10:32:40.2383389+02:00 0HLIPO7NIUT0P:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "WebRJP.Controllers.AccountController.Login (WebRJP)" (a44c0341)
+2018-12-04T10:32:40.5068723+02:00 0HLIPO7NIUT0P:00000002 [INF] Executing action method "WebRJP.Controllers.AccountController.Login (WebRJP)" with arguments (["WebRJP.Common.LoginModel"]) - Validation state: Valid (4e3479ed)
+2018-12-04T10:32:40.5748655+02:00 0HLIPO7NIUT0P:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-04T10:32:44.9197111+02:00 0HLIPO7NIUT0P:00000002 [INF] Executed DbCommand ("2,791"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-12-04T10:32:45.1612531+02:00 0HLIPO7NIUT0P:00000002 [INF] Executed DbCommand ("176"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-12-04T10:32:45.3805535+02:00 0HLIPO7NIUT0P:00000002 [INF] Executed DbCommand ("206"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-04T10:32:45.4023506+02:00 0HLIPO7NIUT0P:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-12-04T10:32:45.4266792+02:00 0HLIPO7NIUT0P:00000002 [INF] Executed action method "WebRJP.Controllers.AccountController.Login (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4919.1038ms. (50a9e262)
+2018-12-04T10:32:45.4307795+02:00 0HLIPO7NIUT0P:00000002 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2018-12-04T10:32:45.4364570+02:00 0HLIPO7NIUT0P:00000002 [INF] Executed action "WebRJP.Controllers.AccountController.Login (WebRJP)" in 5197.1247ms (afa2e885)
+2018-12-04T10:32:45.4404424+02:00 0HLIPO7NIUT0P:00000002 [INF] Request finished in 5424.0224ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-04T10:33:02.9567620+02:00 0HLIPO7NIUT0P:00000003 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:60578/api/login   (ca22a1cb)
+2018-12-04T10:33:02.9570710+02:00 0HLIPO7NIUT0P:00000003 [INF] Policy execution successful. (0204925d)
+2018-12-04T10:33:02.9572616+02:00 0HLIPO7NIUT0P:00000003 [INF] Request finished in 2.1335ms 204  (791a596a)
+2018-12-04T10:33:03.0014376+02:00 0HLIPO7NIUT0P:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:60578/api/login application/json 46 (ca22a1cb)
+2018-12-04T10:33:03.0016288+02:00 0HLIPO7NIUT0P:00000004 [INF] Policy execution successful. (0204925d)
+2018-12-04T10:33:03.0018498+02:00 0HLIPO7NIUT0P:00000004 [INF] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "WebRJP.Controllers.AccountController.Login (WebRJP)" (a44c0341)
+2018-12-04T10:33:03.0066668+02:00 0HLIPO7NIUT0P:00000004 [INF] Executing action method "WebRJP.Controllers.AccountController.Login (WebRJP)" with arguments (["WebRJP.Common.LoginModel"]) - Validation state: Valid (4e3479ed)
+2018-12-04T10:33:03.0076035+02:00 0HLIPO7NIUT0P:00000004 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"RJPContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2018-12-04T10:33:03.0303945+02:00 0HLIPO7NIUT0P:00000004 [INF] Executed DbCommand ("18"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-12-04T10:33:03.0645748+02:00 0HLIPO7NIUT0P:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-12-04T10:33:03.0877496+02:00 0HLIPO7NIUT0P:00000004 [INF] Executed DbCommand ("16"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-04T10:33:03.0886989+02:00 0HLIPO7NIUT0P:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-12-04T10:33:03.0890641+02:00 0HLIPO7NIUT0P:00000004 [INF] Executed action method "WebRJP.Controllers.AccountController.Login (WebRJP)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 82.1856ms. (50a9e262)
+2018-12-04T10:33:03.0892093+02:00 0HLIPO7NIUT0P:00000004 [INF] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (8a1b66c8)
+2018-12-04T10:33:03.0894924+02:00 0HLIPO7NIUT0P:00000004 [INF] Executed action "WebRJP.Controllers.AccountController.Login (WebRJP)" in 84.7958ms (afa2e885)
+2018-12-04T10:33:03.0896645+02:00 0HLIPO7NIUT0P:00000004 [INF] Request finished in 88.3388ms 200 application/json; charset=utf-8 (791a596a)
